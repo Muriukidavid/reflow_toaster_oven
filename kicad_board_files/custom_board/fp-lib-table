@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name connectors)(type KiCad)(uri /home/muriuki/kicad_sources/mylibrary-repos/connectors.pretty)(options "")(descr ""))
+  (lib (name Rotary_encoders)(type KiCad)(uri /home/muriuki/kicad_sources/mylibrary-repos/Rotary_encoders.pretty)(options "")(descr ""))
+)
