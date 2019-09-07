@@ -11,7 +11,7 @@ The goal is to use the board on a breadboard for developing the firmware and des
 
 ### Custom Board Schematic
 <!-- ![The schematic](images/schematic_custom.png)-->
-![The custom board schematic](images/rck22.png)
+![The custom board schematic](kicad_board_files/custom_board/images/rck22_schematic.png)
 
 ### Custom Board Top View 
 
@@ -19,4 +19,7 @@ A preview of the ongoing Custom board PCB design
 ![Board top view](kicad_board_files/custom_board/images/rck22_TOP.png)
 
 A 3D preview of the current design
-![ISO 3D view PCB layout](kicad_board_files/custom_board/images/rck22_RAY_blue.png)
+![ISO 3D view PCB layout](kicad_board_files/custom_board/images/rck22.png)
+
+### BOM
+<a href="kicad_board_files/custom_board/bom/ibom.html" rel="BOM">![BOM](kicad_board_files/custom_board/images/BOM.png)
