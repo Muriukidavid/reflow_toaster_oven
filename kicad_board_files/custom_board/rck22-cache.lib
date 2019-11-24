@@ -605,13 +605,12 @@ ENDDEF
 # myRF_karibe_logo
 #
 DEF myRF_karibe_logo L 0 40 Y Y 1 F N
-F0 "L" 0 -150 50 H V C CNN
-F1 "myRF_karibe_logo" 0 100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+F0 "L" -50 -100 50 H I C CNN
+F1 "myRF_karibe_logo" 0 100 50 H I C CNN
+F2 "artwork:karibe_logo" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 S 0 50 -300 -50 0 1 0 N
-X karibe 1 100 0 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

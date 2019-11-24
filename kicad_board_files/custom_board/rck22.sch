@@ -29,20 +29,6 @@ F 6 "3756" H 6300 3700 50  0001 C CNN "Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
-U 1 1 5D372FAD
-P 4650 3900
-F 0 "J1" H 4700 4317 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 4700 4226 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4650 3900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1907251430_Amphenol-ICC-20021221-00010C4LF_C180221.pdf" H 4650 3900 50  0001 C CNN
-F 4 "20021221-00010C4LF" H 4650 3900 50  0001 C CNN "Mfr. #"
-F 5 "C180221" H 4650 3900 50  0001 C CNN "LCSC #"
-F 6 "140" H 4650 3900 50  0001 C CNN "Stock"
-	1    4650 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Power_Protection:SP0503BAHT D3
 U 1 1 5D378138
 P 6850 4050
@@ -97,19 +83,6 @@ F 5 "MK22FN512VLH12-ND‎" H 9150 4250 50  0001 C CNN "DK #"
 	1    0    0    -1  
 $EndComp
 $Comp
-L sdcard_1051620101:sdcard_1051620101 conn1
-U 1 1 5D393514
-P 5050 1050
-F 0 "conn1" H 5050 1450 60  0000 C CNN
-F 1 "sdcard_1051620101" H 5200 500 60  0000 C CNN
-F 2 "connectors:sdcard_1051620101" H 5050 1050 60  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/1051620101_sd.pdf" H 5050 1050 60  0001 C CNN
-F 4 "1051620101 " H 5050 1050 50  0001 C CNN "Mfr. #"
-F 5 "WM12823CT-ND" H 5050 1050 50  0001 C CNN "DK #"
-	1    5050 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint_Alt TP1
 U 1 1 5D394552
 P 8550 1050
@@ -150,74 +123,6 @@ F 3 "" H 8600 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8550 1200 8600 1200
-Text GLabel 4600 900  0    50   Input ~ 0
-SD_CS
-Text GLabel 4600 1000 0    50   Input ~ 0
-SD_MOSI
-Text GLabel 4600 1100 0    50   Input ~ 0
-SD_CLK
-Text GLabel 4600 1200 0    50   Input ~ 0
-SD_MISO
-NoConn ~ 4600 800 
-NoConn ~ 4600 1300
-$Comp
-L power:+3V3 #PWR0103
-U 1 1 5D3982BB
-P 6200 1150
-F 0 "#PWR0103" H 6200 1000 50  0001 C CNN
-F 1 "+3V3" H 6200 1300 50  0000 C CNN
-F 2 "" H 6200 1150 50  0001 C CNN
-F 3 "" H 6200 1150 50  0001 C CNN
-	1    6200 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 5D398822
-P 6200 1400
-F 0 "C7" H 6090 1465 50  0000 L CNN
-F 1 "22uF/6.3V/±20%/0603" H 5730 1340 25  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 1400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Murata-Electronics-GRM188R71E104KA01D_C77050.pdf" H 6200 1400 50  0001 C CNN
-F 4 "GRM188R71E104KA01D" H 6200 1400 50  0001 C CNN "Mfr. #"
-F 5 "C77050" H 6200 1400 50  0001 C CNN "LCSC #"
-F 6 "334500" H 6200 1400 50  0001 C CNN "Stock"
-	1    6200 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5D398E24
-P 6200 1550
-F 0 "#PWR0104" H 6200 1300 50  0001 C CNN
-F 1 "GND" H 6205 1377 50  0000 C CNN
-F 2 "" H 6200 1550 50  0001 C CNN
-F 3 "" H 6200 1550 50  0001 C CNN
-	1    6200 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5D39A30B
-P 6100 850
-F 0 "#PWR0105" H 6100 600 50  0001 C CNN
-F 1 "GND" H 6105 677 50  0000 C CNN
-F 2 "" H 6100 850 50  0001 C CNN
-F 3 "" H 6100 850 50  0001 C CNN
-	1    6100 850 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5750 850  5950 850 
-Wire Wire Line
-	5750 950  5950 950 
-Wire Wire Line
-	6200 1150 6200 1200
-Wire Wire Line
-	5750 1200 6200 1200
-Connection ~ 6200 1200
-Text GLabel 5750 1100 2    50   Input ~ 0
-SD_SW
 $Comp
 L Device:C_Small C5
 U 1 1 5D3A1310
@@ -693,8 +598,6 @@ F 6 "1033700" V 7550 3800 50  0001 C CNN "Stock"
 	1    7550 3800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4950 3700 2    50   Input ~ 0
-SWD_IO
 Text GLabel 4950 3800 2    50   Input ~ 0
 SWD_CLK
 Text GLabel 4950 4100 2    50   Input ~ 0
@@ -713,7 +616,7 @@ F 3 "" H 4200 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3700 4450 3700
+	4200 3700 4350 3700
 Text GLabel 4950 4000 2    50   Input ~ 0
 UART_RX
 $Comp
@@ -1300,16 +1203,7 @@ Wire Wire Line
 	1200 1550 1200 1500
 Connection ~ 1200 1550
 Wire Wire Line
-	5950 850  5950 950 
-Wire Wire Line
-	6100 850  5950 850 
-Connection ~ 5950 850 
-Wire Wire Line
 	3600 7350 3600 7450
-Wire Wire Line
-	6200 1200 6200 1300
-Wire Wire Line
-	6200 1500 6200 1550
 Text GLabel 8200 4750 0    50   Input ~ 0
 SW
 Wire Wire Line
@@ -1400,8 +1294,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 5950 1200 5950
 Connection ~ 1000 5950
-Text Notes 4100 1650 0    63   ~ 13
-SD Card
 Wire Notes Line
 	2991 6308 6805 6306
 Wire Notes Line
@@ -1790,8 +1682,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 5550 4900 5550
 Connection ~ 4700 5550
-Text Notes 12450 2500 0    100  ~ 0
-Commit message: "Add protection to thermocouple input\n\nUpdate the thermocouple interface with ferrite beads and filter capacitor\nAdd an alternative thermocouple connector other than terminal block\nAdd extra SSR lines for the case of multiple heaters\nReplace the 700mA 3.3V regulator with a 1A regulator, and replace its capacitors\nAdd 10K series resistors to the rotary encoder ouputs\nReplace buttons with two pin header connectors so as to use momentary switches on the casing\nReverse UART connection in ARM SWD debug connector\nTune LED resistors to the datasheet parameters\nRearrange the schamtic and layout\nSource all components and generate a HTML BOM\nUpdate the README" \n
 $Comp
 L Power_Protection:NUP2105L D2
 U 1 1 5D8F9C64
@@ -2184,18 +2074,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 1050 8800 1050
 $Comp
-L myRF:karibe_logo L1
-U 1 1 5DD9A175
-P 1850 7150
-F 0 "L1" H 1737 7375 50  0000 C CNN
-F 1 "karibe_logo" H 1737 7284 50  0000 C CNN
-F 2 "artwork:karibe_logo" H 1850 7150 50  0001 C CNN
-F 3 "" H 1850 7150 50  0001 C CNN
-F 4 "1" H 1850 7150 50  0001 C CNN "DNP"
-	1    1850 7150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5DDA873C
 P 10700 6850
@@ -2204,17 +2082,6 @@ F 1 "Logo_Open_Hardware_Small" H 10700 6625 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_7.3x6mm_Copper" H 10700 6850 50  0001 C CNN
 F 3 "~" H 10700 6850 50  0001 C CNN
 	1    10700 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0144
-U 1 1 5DDAE8C7
-P 1950 7150
-F 0 "#PWR0144" H 1950 6900 50  0001 C CNN
-F 1 "GND" H 1955 6977 50  0000 C CNN
-F 2 "" H 1950 7150 50  0001 C CNN
-F 3 "" H 1950 7150 50  0001 C CNN
-	1    1950 7150
 	1    0    0    -1  
 $EndComp
 Text GLabel 900  2950 0    50   Input ~ 0
@@ -2373,4 +2240,153 @@ Text Label 7850 3700 0    50   ~ 0
 DP
 Text Label 7850 3800 0    50   ~ 0
 DN
+Text GLabel 5050 3700 2    50   Input ~ 0
+SWD_IO
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5D372FAD
+P 4650 3900
+F 0 "J1" H 4700 4200 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4850 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4650 3900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1907251430_Amphenol-ICC-20021221-00010C4LF_C180221.pdf" H 4650 3900 50  0001 C CNN
+F 4 "20021221-00010C4LF" H 4650 3900 50  0001 C CNN "Mfr. #"
+F 5 "C180221" H 4650 3900 50  0001 C CNN "LCSC #"
+F 6 "140" H 4650 3900 50  0001 C CNN "Stock"
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 5DC1628C
+P 4700 3500
+F 0 "R18" V 4800 3450 50  0000 L CNN
+F 1 "680/±1%/0.1W/0402" V 4750 3300 25  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4700 3500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810191533_KOA-Speer-Elec-RK73H1ETTP6800F_C159998.pdf" H 4700 3500 50  0001 C CNN
+F 4 "RK73H1ETTP6800F" H 4700 3500 50  0001 C CNN "Mfr. #"
+F 5 "C159998" H 4700 3500 50  0001 C CNN "LCSC #"
+	1    4700 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3700 5000 3700
+Wire Wire Line
+	5000 3700 5000 3500
+Wire Wire Line
+	5000 3500 4800 3500
+Connection ~ 5000 3700
+Wire Wire Line
+	5000 3700 5050 3700
+Wire Wire Line
+	4600 3500 4350 3500
+Wire Wire Line
+	4350 3500 4350 3700
+Connection ~ 4350 3700
+Wire Wire Line
+	4350 3700 4450 3700
+$Comp
+L myRF:karibe_logo L1
+U 1 1 5DC493DB
+P 7350 6800
+F 0 "L1" H 7300 6700 50  0001 C CNN
+F 1 "karibe_logo" H 7350 6900 50  0001 C CNN
+F 2 "artwork:karibe_logo" H 7350 6800 50  0001 C CNN
+F 3 "" H 7350 6800 50  0001 C CNN
+F 4 "1" H 7350 6800 50  0001 C CNN "DNP"
+	1    7350 6800
+	1    0    0    -1  
+$EndComp
+Text Notes 3905 1695 0    63   ~ 13
+SD Card
+Wire Wire Line
+	6200 1500 6200 1550
+Wire Wire Line
+	6200 1200 6200 1300
+Connection ~ 5950 850 
+Wire Wire Line
+	6100 850  5950 850 
+Wire Wire Line
+	5950 850  5950 950 
+Text GLabel 5750 1100 2    50   Input ~ 0
+SD_SW
+Connection ~ 6200 1200
+Wire Wire Line
+	5750 1200 6200 1200
+Wire Wire Line
+	6200 1150 6200 1200
+Wire Wire Line
+	5750 950  5950 950 
+Wire Wire Line
+	5750 850  5950 850 
+$Comp
+L power:GND #PWR0105
+U 1 1 5D39A30B
+P 6100 850
+F 0 "#PWR0105" H 6100 600 50  0001 C CNN
+F 1 "GND" H 6105 677 50  0000 C CNN
+F 2 "" H 6100 850 50  0001 C CNN
+F 3 "" H 6100 850 50  0001 C CNN
+	1    6100 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D398E24
+P 6200 1550
+F 0 "#PWR0104" H 6200 1300 50  0001 C CNN
+F 1 "GND" H 6205 1377 50  0000 C CNN
+F 2 "" H 6200 1550 50  0001 C CNN
+F 3 "" H 6200 1550 50  0001 C CNN
+	1    6200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5D398822
+P 6200 1400
+F 0 "C7" H 6090 1465 50  0000 L CNN
+F 1 "22uF/6.3V/±20%/0603" H 5730 1340 25  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Murata-Electronics-GRM188R71E104KA01D_C77050.pdf" H 6200 1400 50  0001 C CNN
+F 4 "GRM188R71E104KA01D" H 6200 1400 50  0001 C CNN "Mfr. #"
+F 5 "C77050" H 6200 1400 50  0001 C CNN "LCSC #"
+F 6 "334500" H 6200 1400 50  0001 C CNN "Stock"
+	1    6200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5D3982BB
+P 6200 1150
+F 0 "#PWR0103" H 6200 1000 50  0001 C CNN
+F 1 "+3V3" H 6200 1300 50  0000 C CNN
+F 2 "" H 6200 1150 50  0001 C CNN
+F 3 "" H 6200 1150 50  0001 C CNN
+	1    6200 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4600 1300
+NoConn ~ 4600 800 
+Text GLabel 4600 1200 0    50   Input ~ 0
+SD_MISO
+Text GLabel 4600 1100 0    50   Input ~ 0
+SD_CLK
+Text GLabel 4600 1000 0    50   Input ~ 0
+SD_MOSI
+Text GLabel 4600 900  0    50   Input ~ 0
+SD_CS
+$Comp
+L sdcard_1051620101:sdcard_1051620101 conn1
+U 1 1 5D393514
+P 5050 1050
+F 0 "conn1" H 5050 1450 60  0000 C CNN
+F 1 "sdcard_1051620101" H 5200 500 60  0000 C CNN
+F 2 "connectors:sdcard_1051620101" H 5050 1050 60  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/1051620101_sd.pdf" H 5050 1050 60  0001 C CNN
+F 4 "1051620101 " H 5050 1050 50  0001 C CNN "Mfr. #"
+F 5 "WM12823CT-ND" H 5050 1050 50  0001 C CNN "DK #"
+	1    5050 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
