@@ -22,4 +22,4 @@ A 3D preview of the current design
 ![ISO 3D view PCB layout](kicad_board_files/custom_board/images/rck22.png)
 
 ### BOM
-<a href="kicad_board_files/custom_board/bom/ibom.html" rel="BOM">![BOM](kicad_board_files/custom_board/images/BOM.png)
+<a href="https://htmlpreview.github.io/?https://github.com/Muriukidavid/reflow_toaster_oven/blob/master/kicad_board_files/custom_board/bom/ibom.html" rel="BOM">![BOM](kicad_board_files/custom_board/images/BOM.png)
