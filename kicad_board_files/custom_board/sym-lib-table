@@ -2,4 +2,5 @@
   (lib (name sdcard_1051620101)(type Legacy)(uri /home/muriuki/kicad_sources/mylibrary-repos/sdcard_1051620101.lib)(options "")(descr ""))
   (lib (name PEC11L-4115F-S0020)(type Legacy)(uri /home/muriuki/kicad_sources/mylibrary-repos/PEC11L-4115F-S0020.lib)(options "")(descr ""))
   (lib (name rck22-rescue)(type Legacy)(uri ${KIPRJMOD}/rck22-rescue.lib)(options "")(descr ""))
+  (lib (name TF01A)(type Legacy)(uri /home/muriuki/kicad_sources/mylibrary-repos/schematic_symbols/TF-01A.lib)(options "")(descr ""))
 )
